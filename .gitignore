@@ -1,0 +1,6 @@
+# C++ exclusions
+*.out
+*.exe
+# Java exclusions
+*.class
+*.jar
