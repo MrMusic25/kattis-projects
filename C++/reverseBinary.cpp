@@ -6,9 +6,9 @@ using namespace std;
 
 void i2b(int num, int rep/*resentation*/[]) {
 	int n = num, size = ((int)sizeof(rep)/sizeof(rep[0]));
-	for (int i = 0, j = size -1; i < size; i++, j--) {
-		if (n > pow(2,j)) {
-			n -= pow(2,j);
+	for (int i = 0, j = size; i < size; i++, j--) {
+		if (n > pow(2,j) - 1) {
+			n -= pow(2,j) - 1;
 			rep[i] = 1;
 		}
 	}
