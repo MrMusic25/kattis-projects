@@ -40,8 +40,8 @@ int main() {
 	cin >> n;
 	if (!withinBounds(1,15,n,'e')) return 1;
 	
-	int total = (2*n+1);
-	cout << total << ", " << total * total << endl;
+	int total = pow(2,n) + 1;
+	cout << total * total << endl;
 	
 	return 0;
 }
