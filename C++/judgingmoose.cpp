@@ -34,8 +34,24 @@ bool withinBounds(string value, int max, char type) {
 	}
 }
 
+int greatest(int x, int y) {
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+
 int main() {
+	int l, r;
+	cin >> l >> r;
+	if (!(withinBounds(0,20,l,'e') && withinBounds(0,20,r,'e'))) return 1;
 	
+	if (l == 0 && r == 0)
+		cout << "Not a moose" << endl;
+	else if (l == r)
+		cout << "Even " << l + r << endl;
+	else
+		cout << "Odd " << 2 * greatest(l,r) << endl;
 	
 	return 0;
 }
